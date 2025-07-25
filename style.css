@@ -1,9 +1,17 @@
+html {
+    background-color: #8b4513;
+}
+
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
     background-color: #fffaf5;
     color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
 }
 
 header {
@@ -48,7 +56,6 @@ footer {
     color: white;
     text-align: center;
     padding: 1rem;
-    margin-top: 2rem;
 }
 
 .galerie {
@@ -63,7 +70,7 @@ footer {
     margin: 20px;
 }
 
-.carte.produit {
+.carte-produit {
     position: relative;
     background-size: cover;
     background-position: center;
@@ -75,14 +82,15 @@ footer {
     justify-content: center;
 }
 
-.carte.produit::before {
+.carte-produit::before {
     content: "";
     position: absolute;
     inset: 0;
     background-color: rgba(0, 0, 0, 0.4);
 }
 
-.carte.produit span {
+
+.carte-produit span {
     position: relative;
     color: white;
     font-size: 1.8rem;
@@ -93,6 +101,7 @@ footer {
     padding: 2rem;
     max-width: 600px;
     margin: auto;
+    flex-direction: column;
 }
 
 form input, form textarea {
